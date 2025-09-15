@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+  Require all granted
+</IfModule>

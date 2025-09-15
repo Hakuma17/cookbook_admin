@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Test - Cookbook Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-gradient mb-4">Responsive Design Test</h1>
+        
+        <!-- Stats Cards -->
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="cb-stat">
+                    <div class="hd bg-blue">
+                        <span>Recipes</span>
+                        <span class="delta">+12.5%</span>
+                    </div>
+                    <div class="bd">
+                        <div class="val">1,234</div>
+                        <svg class="spark" viewBox="0 0 120 32">
+                            <path class="axis" d="M1,30 L119,30" />
+                            <path d="M1,25 L30,20 L60,15 L90,10 L119,5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="cb-stat">
+                    <div class="hd bg-green">
+                        <span>Users</span>
+                        <span class="delta">+8.2%</span>
+                    </div>
+                    <div class="bd">
+                        <div class="val">567</div>
+                        <svg class="spark" viewBox="0 0 120 32">
+                            <path class="axis" d="M1,30 L119,30" />
+                            <path d="M1,20 L30,15 L60,25 L90,10 L119,18"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="cb-stat">
+                    <div class="hd bg-cyan">
+                        <span>Ingredients</span>
+                        <span class="delta">+5.1%</span>
+                    </div>
+                    <div class="bd">
+                        <div class="val">89</div>
+                        <svg class="spark" viewBox="0 0 120 32">
+                            <path class="axis" d="M1,30 L119,30" />
+                            <path d="M1,28 L30,25 L60,20 L90,15 L119,12"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="cb-stat">
+                    <div class="hd bg-amber">
+                        <span>Reviews</span>
+                        <span class="delta">+15.3%</span>
+                    </div>
+                    <div class="bd">
+                        <div class="val">2,456</div>
+                        <svg class="spark" viewBox="0 0 120 32">
+                            <path class="axis" d="M1,30 L119,30" />
+                            <path d="M1,15 L30,20 L60,10 L90,25 L119,8"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Actions -->
+        <div class="row g-3 mb-4 cb-quick">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a class="card p-3 h-100" href="#">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="cb-ico">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div>
+                            <div class="fw-semibold">จัดการ Recipes</div>
+                            <div class="text-muted small">เพิ่ม/แก้ไขเมนูอาหาร</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a class="card p-3 h-100" href="#">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="cb-ico">
+                            <i class="bi bi-carrot"></i>
+                        </div>
+                        <div>
+                            <div class="fw-semibold">จัดการ Ingredients</div>
+                            <div class="text-muted small">ปรับภาพ/ชื่อวัตถุดิบ</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a class="card p-3 h-100" href="#">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="cb-ico">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div>
+                            <div class="fw-semibold">จัดการ Users</div>
+                            <div class="text-muted small">แบน/ยกเลิกแบน, ตรวจสอบ</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a class="card p-3 h-100" href="#">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="cb-ico">
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div>
+                            <div class="fw-semibold">จัดการ Reviews</div>
+                            <div class="text-muted small">อนุมัติ/ปฏิเสธรีวิว</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Chips -->
+        <div class="cb-chips mb-4">
+            <a class="chip active" href="#">ล่าสุด</a>
+            <a class="chip" href="#">ยอดนิยม</a>
+            <a class="chip" href="#">มาแรง</a>
+            <a class="chip" href="#">แนะนำ</a>
+        </div>
+        
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table align-middle bg-white table-hover cb-card">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ชื่อ</th>
+                        <th>สถานะ</th>
+                        <th>วันที่สร้าง</th>
+                        <th>การจัดการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ข้าวผัดกุ้ง</td>
+                        <td><span class="badge text-bg-success">เผยแพร่</span></td>
+                        <td>2024-01-15</td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-warning">แก้ไข</button>
+                                <button class="btn btn-success">Publish</button>
+                                <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">⋯</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ต้มยำกุ้ง</td>
+                        <td><span class="badge text-bg-warning">รอตรวจ</span></td>
+                        <td>2024-01-14</td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-warning">แก้ไข</button>
+                                <button class="btn btn-success">Publish</button>
+                                <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">⋯</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Form Test -->
+        <div class="card cb-card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0">Form Test</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">ชื่อ</label>
+                            <input type="text" class="form-control" placeholder="กรอกชื่อ">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" placeholder="กรอกอีเมล">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">คำอธิบาย</label>
+                            <textarea class="form-control" rows="3" placeholder="กรอกคำอธิบาย"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">บันทึก</button>
+                            <button type="button" class="btn btn-outline-secondary">ยกเลิก</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Responsive Test Info -->
+        <div class="alert alert-info mt-4">
+            <h6><i class="bi bi-info-circle me-2"></i>การทดสอบ Responsive Design</h6>
+            <p class="mb-0">ลองปรับขนาดหน้าต่างเบราว์เซอร์หรือใช้ Developer Tools เพื่อดูการปรับตัวของ UI ในขนาดหน้าจอต่างๆ</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
